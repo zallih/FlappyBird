@@ -35,9 +35,9 @@ No jogo, o objetivo é conduzir um pássaro entre canos tocando a tela para leva
   
   Criando FlappyBird com minha própria engine!
    <br><br>
-  Para jogar baixe o aquivivo e execute - <a href="">Clique aqui </a>
+  Para jogar baixe o aquivivo e execute - <a href="https://github.com/zallih/FlappyBird/blob/main/FlappyBird.jar?raw=true">Clique aqui </a>
   <br>
-  OBS - Pode aparecer que irá danificar seu aprelho, porem é completamente seguro! Caso queira conferir o código fonte <a href=""> Clique aqui </a>
+  OBS - Pode aparecer que irá danificar seu aprelho, porem é completamente seguro! Caso queira conferir o código fonte <a href="https://github.com/zallih/FlappyBird/tree/main/FlappyBird"> Clique aqui </a>
   
   <h3>Controles:</h3>
   
