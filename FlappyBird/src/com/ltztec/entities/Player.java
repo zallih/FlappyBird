@@ -11,7 +11,7 @@ public class Player extends Entity {
 	private int frames = 0, maxFrames = 8, index = 0, maxIndex = 2;
 	private BufferedImage[] sprites;
 	public boolean isPressed = false;
-	
+
 	public Player(int x, int y, int width, int height, double speed, BufferedImage sprite) {
 		super(x, y, width, height, speed, sprite);
 		sprites = new BufferedImage[3];
@@ -21,28 +21,30 @@ public class Player extends Entity {
 	}
 
 	public void tick() {
-		
-		if(!isPressed) {
-			y+=2;
-		}else {
-			y-=2;
+
+		if (!isPressed) {
+			y += 2;
+		} else {
+			if (y > 0) {
+				y -= 2;
+			}
 		}
-		
-		if(y > Game.HEIGHT) {
+
+		if (y > Game.HEIGHT) {
 			World.restartGame();
 			return;
 		}
-		
-		for(int i = 0; i < Game.entities.size(); i ++) {
+
+		for (int i = 0; i < Game.entities.size(); i++) {
 			Entity e = Game.entities.get(i);
-			if(e != this) {
-				if(Entity.isColidding(this, e)) {
+			if (e != this) {
+				if (Entity.isColidding(this, e)) {
 					World.restartGame();
 					return;
 				}
 			}
 		}
-		
+
 		frames++;
 		if (frames == maxFrames) {
 			frames = 0;
@@ -58,6 +60,6 @@ public class Player extends Entity {
 	public void render(Graphics g) {
 		super.render(g);
 		g.drawImage(sprites[index], this.getX() - Camera.x, this.getY() - Camera.y, null);
-	
+
 	}
 }

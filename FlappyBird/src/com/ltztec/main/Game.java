@@ -231,6 +231,6 @@ public class Game extends Canvas implements Runnable,KeyListener,MouseListener,M
 	public void mouseMoved(MouseEvent e) {
 	
 	}
+}
 
 	
-}

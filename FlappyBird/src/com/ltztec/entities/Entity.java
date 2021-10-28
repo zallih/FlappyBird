@@ -13,11 +13,6 @@ import com.ltztec.world.World;
 
 
 public class Entity {
-	
-	public static BufferedImage CEREJA_SPRITE = Game.spritesheet.getSprite(0, 16, 16, 16);
-	public static BufferedImage ENEMY1_SPRITE = Game.spritesheet.getSprite(32, 32, 16, 16);
-	public static BufferedImage ENEMY2_SPRITE = Game.spritesheet.getSprite(32, 48, 16, 16);
-	public static BufferedImage ENEMY_GHOST = Game.spritesheet.getSprite(32, 96, 16, 16);
 
 	protected double x;
 	protected double y;
