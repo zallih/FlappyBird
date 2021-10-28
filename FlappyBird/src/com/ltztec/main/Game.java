@@ -100,6 +100,7 @@ public class Game extends Canvas implements Runnable,KeyListener,MouseListener,M
 	}
 	
 	public void tick(){
+		Sound.themeSong.loop();
 		generatepipe.tick();
 		for(int i = 0; i < entities.size(); i++) {
 			Entity e = entities.get(i);
